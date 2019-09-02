@@ -1,0 +1,7 @@
+<h1 class="text-center my-4">Some virtual food shop</h1>
+
+<div class="col-md-6 col-lg-4">
+  <%= render "products/card", product: @product do %>
+      <%= link_to "Add to cart" , announcements_path, class: "btn btn-primary" %>
+  <% end %>
+</div>

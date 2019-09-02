@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= render 'shared/head' %>
+  </head>
+
+  <body>
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/notices' %>
+    <div class="<%= current_page?(root_path) ? "" : "container my-3 pt-5" %>">
+      <%= yield %>
+    </div>
+
+    <%= render 'shared/footer' %>
+  </body>
+</html>

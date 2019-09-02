@@ -1,0 +1,13 @@
+// Fonts
+@import "config/fonts";
+
+// colors
+@import "config/colors";
+
+// vendor
+@import "~bootstrap/scss/functions";
+@import "config/bootstrap_variables";
+@import "config/bootstrap_critical";
+
+// Components
+@import "components/banner";

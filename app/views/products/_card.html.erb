@@ -1,0 +1,15 @@
+<div class="card mb-4">
+  <%= image_pack_tag product.image, class: "card-img-top", lazy: "auto" %>
+  <div class="card-body">
+    <h5 class="card-title">
+      <%= product.name %>
+    </h5>
+    <p class="card-text">
+      <%= product.description %>
+    </p>
+    <div class="d-flex justify-content-between align-items-center text-info">
+      <%= humanized_money_with_symbol product.price %>
+      <%= yield %>
+    </div>
+  </div>
+</div>

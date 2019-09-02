@@ -1,0 +1,20 @@
+<title><%= Rails.configuration.application_name %></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<% if current_page?(root_path) %>
+  <!-- Inline the critical CSS -->
+  <style>
+    <%= File.read(File.join(Rails.root, 'public', Webpacker.manifest.lookup('critical.css'))).html_safe %>
+  </style>
+
+  <!-- Lazy load the rest with loadCSS -->
+  <link rel="preload" href="<%= Webpacker.manifest.lookup('application.css') %>" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="<%= Webpacker.manifest.lookup('application.css') %>"></noscript>
+<% else %>
+  <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+<% end %>
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>

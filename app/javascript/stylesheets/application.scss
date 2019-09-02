@@ -1,0 +1,20 @@
+// Fonts
+@import "config/fonts";
+
+// Graphical variables
+@import "config/colors";
+
+// Vendor
+@import "~bootstrap/scss/functions";
+@import "config/bootstrap_variables";
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+// Components
+@import "components/index";
+
+// layouts
+@import "layouts/sticky-footer";

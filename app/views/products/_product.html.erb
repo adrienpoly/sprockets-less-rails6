@@ -1,0 +1,5 @@
+<div class="col-md-6 col-lg-4">
+  <%= render "products/card", product: product do %>
+      <%= link_to "Discover" , product_path(product), class: "btn btn-primary" %>
+  <% end %>
+</div>
