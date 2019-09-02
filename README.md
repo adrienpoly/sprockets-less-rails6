@@ -4,7 +4,7 @@ Looking as some optimisation when moving all assets to Webpacker
 
 ## Part 1 : Inline Critical CSS with Purges CSS
 
-Read more [dev.to]()
+Read more [dev.to](https://dev.to/adrienpoly/critical-css-with-rails-and-webpacker-sprocketsless-part-1-2bck)
 
 Key take away the PostCSS config
 
